@@ -1,0 +1,7 @@
+{
+  "pr_auc": 0.6006313131313131,
+  "threshold": 0.5,
+  "classification_report": "              precision    recall  f1-score   support\n\n  non-planet       0.50      1.00      0.67         6\n      planet       0.00      0.00      0.00         6\n\n    accuracy                           0.50        12\n   macro avg       0.25      0.50      0.33        12\nweighted avg       0.25      0.50      0.33        12\n",
+  "n_test": 12,
+  "n_positive": 6
+}

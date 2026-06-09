@@ -1,0 +1,5 @@
+{
+  "pr_auc": 0.6746031746031745,
+  "classification_report": "              precision    recall  f1-score   support\n\n  non-planet       1.00      0.67      0.80         6\n      planet       0.75      1.00      0.86         6\n\n    accuracy                           0.83        12\n   macro avg       0.88      0.83      0.83        12\nweighted avg       0.88      0.83      0.83        12\n",
+  "method": "SMOTE+GBM"
+}

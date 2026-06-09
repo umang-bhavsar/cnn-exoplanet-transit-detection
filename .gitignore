@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Data & models (large files)
+data/raw/
+data/processed/
+data/catalogs/*.csv
+!data/catalogs/.gitkeep
+models/*.pt
+models/*.pth
+!models/.gitkeep
+
+# ML / notebooks
+.ipynb_checkpoints/
+wandb/
+mlruns/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp

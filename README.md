@@ -1,8 +1,6 @@
 # Exoplanet Transit Detector
 
-Train a **1D CNN** to detect tiny brightness dips in real **NASA Kepler** light curves — the signature of a planet transiting its star.
-
-> *"I trained a 1D CNN on phase-folded Kepler light curves with BLS preprocessing and focal loss to handle extreme class imbalance (~1% confirmed exoplanets)."*
+Trained a **1D CNN** to detect tiny brightness dips in real **NASA Kepler** light curves — the signature of a planet transiting its star.
 
 ## Pipeline
 

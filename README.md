@@ -79,28 +79,6 @@ No API key required.
 | **1D CNN + focal loss** | **0.78** | Raw phase-folded light curves |
 | SMOTE + GradientBoosting | 0.67 | Tabular features (period, depth, std) |
 
-Metrics intentionally use **PR-AUC** and **recall** — not accuracy — because class balance is ~50/50 here but real sky surveys are <<1% positive.
-
-## Scaling up
-
-Edit `configs/default.yaml`:
-
-```yaml
-download:
-  max_per_class: 80    # default 40
-  max_total: 500       # default 200
-train:
-  epochs: 60
-```
-
-## Interview talking points
-
-1. **Transit method** — planet blocks ~0.01–1% of starlight; periodic U-shaped dips.
-2. **Class imbalance** — most stars have no detectable transits; accuracy is misleading.
-3. **False positives** — eclipsing binaries mimic transits; model is one vetting stage.
-4. **Focal loss** — focuses learning on hard/rare positives (Lin et al. 2017).
-5. **BLS + fold** — domain-informed preprocessing, not label leakage.
-
 ## License
 
 MIT — NASA data is public domain.
